@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111827" />
+  <meta name="description" content="SellerKit AI - Toolkit ringan untuk seller, affiliate, dan UMKM." />
+  <title>SellerKit AI</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">SMART TOOLS FOR SELLER</p>
+      <h1>SellerKit AI</h1>
+    </div>
+    <button id="themeToggle" class="icon-btn" aria-label="Ubah tema">☾</button>
+  </header>
+
+  <main>
+    <section class="hero card">
+      <span class="badge">Mobile-first • Gratis • Tanpa Login</span>
+      <h2>Jual lebih cepat dengan toolkit sederhana.</h2>
+      <p>Buat caption, hook, deskripsi produk, balasan customer, hitung profit, dan rencanakan konten langsung dari HP.</p>
+      <div class="hero-actions">
+        <button class="primary" onclick="scrollToTools()">Mulai Gunakan</button>
+        <button class="secondary" onclick="showAbout()">Tentang</button>
+      </div>
+    </section>
+
+    <section id="tools" class="section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">TOOLS</p>
+          <h2>Pilih alat</h2>
+        </div>
+        <span class="pill">6 fitur</span>
+      </div>
+
+      <div class="tool-grid">
+        <button class="tool-card" onclick="openTool('caption')">
+          <span class="emoji">📝</span><strong>Caption Generator</strong><small>Buat caption jualan cepat</small>
+        </button>
+        <button class="tool-card" onclick="openTool('hook')">
+          <span class="emoji">🎣</span><strong>Hook Generator</strong><small>Hook TikTok/Reels</small>
+        </button>
+        <button class="tool-card" onclick="openTool('description')">
+          <span class="emoji">🛍️</span><strong>Product Description</strong><small>Deskripsi produk rapi</small>
+        </button>
+        <button class="tool-card" onclick="openTool('reply')">
+          <span class="emoji">💬</span><strong>Balasan Customer</strong><small>Template chat customer</small>
+        </button>
+        <button class="tool-card" onclick="openTool('profit')">
+          <span class="emoji">💰</span><strong>Profit Calculator</strong><small>Hitung laba otomatis</small>
+        </button>
+        <button class="tool-card" onclick="openTool('planner')">
+          <span class="emoji">📅</span><strong>Content Planner</strong><small>Simpan jadwal konten</small>
+        </button>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">RESELL READY</p>
+          <h2>Mudah di-branding ulang</h2>
+        </div>
+      </div>
+      <div class="card">
+        <p>Ganti nama <b>SellerKit AI</b>, warna, logo, teks, dan kontak kamu sendiri. Cocok dijual ulang sebagai template digital atau white-label.</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-sheet">
+      <div class="modal-head">
+        <div>
+          <p id="modalEyebrow" class="eyebrow">TOOL</p>
+          <h2 id="modalTitle">Tool</h2>
+        </div>
+        <button class="icon-btn" onclick="closeModal()">✕</button>
+      </div>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast hidden">Tersalin</div>
+
+  <footer>
+    <p>SellerKit AI • Versi Starter</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
