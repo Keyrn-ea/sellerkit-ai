@@ -1,22 +1,14 @@
-# SellerKit AI Starter
+# SellerKit AI V2
 
-WebApp mobile-first untuk seller, affiliate, reseller, dan UMKM.
+Upgrade dari V1.
 
-## Fitur
-- Caption Generator
-- Hook Generator
-- Product Description
-- Balasan Customer
-- Profit Calculator
-- Content Planner (tersimpan di browser)
-- Dark mode
-- PWA-ready
+## Cara update dari HP
+Ganti 3 file ini di repository GitHub lama:
+- index.html
+- style.css
+- app.js
 
-## Cara pakai di HP
-1. Ekstrak ZIP.
-2. Upload seluruh file ke GitHub repository.
-3. Deploy ke Vercel, Netlify, atau GitHub Pages.
-4. Buka URL hasil deploy dari HP.
+Setelah commit ke branch main, Vercel akan deploy ulang otomatis.
 
-## Catatan
-Versi ini tidak memakai API AI. Generator bekerja dengan template lokal agar gratis dan mudah dijual ulang.
+## Fitur baru
+Affiliate Script, CTA Generator, WA Broadcast, Affiliate Commission, branding white-label, halaman lisensi.
